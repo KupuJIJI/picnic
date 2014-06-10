@@ -1,0 +1,413 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+// BASE
+
+
+
+.active_admin, input, button, select, textarea, form fieldset.actions li.cancel a {
+  font-family: 'Open Sans', sans-serif !important;
+
+}
+
+.active_admin{
+  font-size: 13px;
+}
+
+#utility_nav{
+  width: 240px !important;
+}
+
+// Header menu
+
+.header, #header{
+  background: #368ee0 !important;
+  display: table;
+  //height: 20px;
+  width: 100%;
+  overflow: visible;
+  position: inherit;
+  z-index: 900;
+  color: white;
+  text-shadow: none;
+  border-bottom: none;
+  padding: 0;
+
+}
+
+.header-item tabs{
+  
+}
+
+ul, li, a{
+  border-radius: 0px !important;  
+}
+
+#header h1{
+  color: #fff ;
+}
+
+ul.tabs > li.has_nested > a{
+  background: image-url('aa_custom/caret-down.gif') no-repeat 89% 50% !important;
+}
+
+#header ul.tabs > li {
+  margin-bottom: 0;
+  margin-top: 0;
+  display:block;
+  float: left;
+  margin-right: 0;
+
+  &.has_nested {
+    &:hover {
+
+      a {
+        border-bottom: 0;
+        
+      }
+    }
+    ul {
+      margin-top: 0;
+      padding: 0;
+      li {
+        a {
+
+          color: black;
+          background-color: white !important;          
+        }
+        &:hover {
+          a {
+            background-color: #368ee0 !important;
+            color: #fff;
+             
+          }
+        }
+      }
+    }
+
+  }
+
+  &:hover {
+    a {
+      background-color: #1e74c5 !important;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 10px 15px;
+  }
+}
+
+
+#header ul.tabs{
+  top: 0;
+  > li.current a{
+    background-color: #1e74c5 !important;
+    color: #fff;
+    text-shadow: none;
+  }
+
+}
+
+#header ul.tabs{
+  > li ul {
+  background: #fff
+  }
+}
+
+
+#header a, #header a:link {
+  color: #fff;
+  text-shadow: none;
+}
+
+
+#tabs {
+  
+}
+
+#header {
+  #utility_nav {
+    display: block;
+    width: 200px;
+    padding-right: 0;
+    li {
+      display: block;
+      float: left;
+    }
+  }
+}
+
+
+
+
+// Title bar
+
+#title_bar{
+  #titlebar_right{
+    .action_items{
+     a {
+
+      &:hover{
+        background: #267326 !important ;
+        }
+      padding: 8px 12px;
+      border: 0;
+      background: #393;
+      color: #fff;
+      font-weight: normal;
+      text-shadow: none;
+      box-shadow: none;
+      }
+    }
+    
+  }
+  background: #fff ;
+  box-shadow: none !important;
+  border: 0;
+  padding: 0 23px;
+  margin: 10px 0;
+  //min-height: 80px;
+
+}
+
+
+.breadcrumb {
+  display: block;
+  background-color: #f5f5f5;
+  padding: 8px 15px;
+  font-size: 10px;
+}
+
+
+.dropdown_menu_button{
+  border-radius: 200px !important;
+}
+
+table.index_table th {
+  background: rgb(238, 238, 238);
+}
+
+table.index_table th {
+  border: none;
+  box-shadow: none;
+  padding: 10px;
+  font-weight: normal;
+
+}
+
+
+
+
+
+// Editors
+
+form input[type=submit]{
+  &:hover{
+    background: #267326 !important;
+  }
+  background: #393 ;
+  text-shadow: none;
+  border-radius: 0px;
+  border: none;
+  font-weight: normal;
+  padding: 8px 12px;
+  box-shadow: none !important;
+}
+
+fieldset.actions{
+  ol{
+    li.cancel{ 
+      a{
+        &:hover{
+          background: rgb(126, 126, 126) !important;
+        }
+        background: #999999;
+        text-shadow: none;
+        border-radius: 0px;
+        border: none;
+        font-weight: normal;
+        padding: 8px 12px;
+        color: #fff;
+        box-shadow: none !important;
+        }
+      }
+    }
+    border: 0;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    background: #f5f5f5;
+    
+  }
+
+fieldset.actions{
+  ol{
+    li{
+      padding: 0 0 0 15px;
+    }
+  }
+}
+
+form {
+  fieldset{
+    ol{
+     > li{
+      label {
+        text-shadow: none;
+        font-weight: normal;
+      }
+    }
+  }
+  -webkit-border-radius: 0px !important;
+  -webkit-box-shadow: none;
+  box-shadow: none !important;
+  }
+}
+
+h2{
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif ;
+}
+
+
+
+.table_tools_segmented_control li:last-child a {
+  border-top-right-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+}
+
+.table_tools_segmented_control{
+  li:first-child{
+   a { 
+    border-top-left-radius: 12px !important;
+    border-bottom-left-radius: 12px !important;
+    }
+  }
+}
+
+legend{
+  span{
+    background: #EEE !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
+
+// Login Page
+
+body.logged_out{
+  #active_admin_content{
+    h2{
+      padding: 15px;
+      font-size: 20px;
+      text-align: center;
+      background: #368ee0;
+      border: none;
+      -webkit-box-shadow: none !important;
+    }
+  -webkit-box-shadow: none !important;
+  form input[type=submit] {
+    background: #368ee0;
+    &:hover{
+      background: #1e74c5 !important;
+    }
+  }
+  }
+  .flash, .flash_alert{
+    display: none;
+  }
+  background: #368ee0;
+  input{
+    border-radius: 0px;
+  }
+}
+
+textarea, form input[type=text]{
+  border-radius: 0px !important;
+}
+
+
+
+#page_title {
+  margin-top: 32px !important;
+  //margin-bottom: 12px !important;
+
+  padding-left: 12px !important;
+}
+
+#titlebar_right{
+  display: block !important;
+  width: 300px;
+  float: right;
+  top: -20px;
+  position: relative;
+  height: auto !important;
+  min-height: 30px;
+
+}
+
+#titlebar_left{
+  display: block !important;
+  height: auto !important;
+}
+
+#active_admin_content{
+  padding-top: 0px;
+}
+
+.active_admin{
+  #wrapper{
+    .title_bar{
+      #titlebar_right{
+        .action_items{
+          span.action_item{
+            a[data-method="delete"] {
+            background: #e51400 !important;
+            &:hover{
+              background: #b21000 !important;
+            }
+}}}}}}}
+
+
+.flash_notice{
+  margin-bottom: 20px;
+  background: #EEE !important;
+  border-top: 1px solid #adcbaf;
+  color: #51C34D;
+  font-weight: normal;
+  text-shadow:none;
+}
+
+
+
+li.string.input.optional.stringish{
+  input{
+    margin: 4px 0 !important;
+  }
+}
+
+form div.has_many, #floor_plans_page {
+  a.button{
+    &:hover{
+      background: #1e74c5 !important;
+    }
+    background: #368ee0;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif !important;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
+    font-weight: normal;
+  }
+}
+
+.redactor_box {
+// position: relative;
+// overflow: visible;
+// border: 1px solid #ddd;
+// background-color: #fff;
+min-height: 150px; 
+width: 79%;
+float: right;
+}
